@@ -9,6 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useToast } from "@/components/ui/use-toast";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const [searchParams] = useSearchParams();
@@ -34,16 +35,33 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, service: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Submit data to Supabase
+      const { error } = await supabase
+        .from('contact_submissions')
+        .insert([
+          { 
+            name: formData.name,
+            email: formData.email,
+            company: formData.company,
+            phone: formData.phone,
+            service: formData.service,
+            message: formData.message
+          }
+        ]);
+      
+      if (error) throw error;
+      
       toast({
         title: "Message sent!",
         description: "We'll get back to you as soon as possible.",
       });
+      
+      // Reset form after successful submission
       setFormData({
         name: "",
         email: "",
@@ -52,8 +70,16 @@ const Contact = () => {
         service: "",
         message: "",
       });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast({
+        title: "Something went wrong",
+        description: "Please try submitting your message again.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
 
   return (
