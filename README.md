@@ -1,73 +1,41 @@
-# Welcome to your Lovable project
+# AXIMO — AI Automation Solutions
 
-## Project info
+**Welcome to the official repository of AXIMO's website!**  
+AXIMO is a next-generation AI-powered automation agency helping individuals and businesses maximize productivity through smart tools and custom workflows.
 
-**URL**: https://lovable.dev/projects/c3549b80-727e-4b3d-b283-0624b3029b2e
+---
 
-## How can I edit this code?
+## 🌟 About AXIMO
 
-There are several ways of editing your application.
+AXIMO combines **AI** and **automation** to build powerful, scalable, and custom-tailored solutions for:
+- **Email Automation**
+- **WhatsApp Automation**
+- **Business Workflow Automation**
+- **Custom Integrations using tools like n8n, Zapier, Make.com, and more**
 
-**Use Lovable**
+We believe in making automation simple, accessible, and efficient for everyone — no technical skills required.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c3549b80-727e-4b3d-b283-0624b3029b2e) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠 Tech Stack
 
-**Use your preferred IDE**
+- **Frontend**: HTML, CSS, JavaScript, React (or your stack)
+- **Backend (optional)**: Node.js, Express (if applicable)
+- **Automation Tools**: n8n, Zapier, Make, Pabbly, OpenAI, Google Apps Script
+- **Design**: Figma, TailwindCSS, Framer
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Features
 
-Follow these steps:
+- Minimalistic, modern, and responsive UI
+- Hero section with brand story and CTA
+- Services section with automation categories
+- Testimonials & FAQs
+- Contact form or booking integration
+- SEO-friendly and optimized for performance
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📂 Folder Structure
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c3549b80-727e-4b3d-b283-0624b3029b2e) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
