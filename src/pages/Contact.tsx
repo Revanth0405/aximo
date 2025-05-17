@@ -208,7 +208,7 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Email Us</h3>
                     <p className="text-gray-600">
-                      Founder: revanthbalabhadruni@gmail.com
+                      Founder: revanthbalabhadruni@gmail.com<br/>
                       Co-Founder: adithyakumarnikhil@gmail.com
                     </p>
                   </div>
