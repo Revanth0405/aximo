@@ -6,28 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const Pricing = () => {
-  const basicFeatures = [
-    { text: "AI Strategy Consultation", included: true },
-    { text: "Basic Data Analysis", included: true },
-    { text: "1 AI Model Implementation", included: true },
-    { text: "Monthly Performance Report", included: true },
-    { text: "Email Support", included: true },
-    { text: "Advanced Analytics Dashboard", included: false },
-    { text: "Custom AI Model Development", included: false },
-    { text: "Dedicated Account Manager", included: false },
-  ];
-
-  const proFeatures = [
-    { text: "AI Strategy Consultation", included: true },
-    { text: "Advanced Data Analysis", included: true },
-    { text: "3 AI Model Implementations", included: true },
-    { text: "Weekly Performance Reports", included: true },
-    { text: "Priority Email & Phone Support", included: true },
-    { text: "Advanced Analytics Dashboard", included: true },
-    { text: "Custom AI Model Development", included: false },
-    { text: "Dedicated Account Manager", included: false },
-  ];
-
   const enterpriseFeatures = [
     { text: "AI Strategy Consultation", included: true },
     { text: "Comprehensive Data Analysis", included: true },
@@ -41,30 +19,31 @@ const Pricing = () => {
 
   const faqs = [
     {
-      question: "What payment methods do you accept?",
-      answer: "We accept all major credit cards, bank transfers, and PayPal. For enterprise plans, we can also arrange other payment methods as needed."
+      question: "What services do you provide?",
+      answer: "We offer AI-powered automation tools including email automation, WhatsApp automation, workflow automation, and custom solutions tailored to your business needs."
     },
     {
-      question: "Can I upgrade or downgrade my plan later?",
-      answer: "Yes, you can upgrade your plan at any time. Downgrades will take effect at the beginning of the next billing cycle."
+      question: "Do I need technical knowledge to use your services?",
+      answer: "No. Our tools are designed to be user-friendly, and we also provide guidance and support to help you get started."
     },
     {
-      question: "Is there a contract or commitment period?",
-      answer: "Our monthly plans can be canceled anytime. Annual plans provide a discount but commit you for a 12-month period."
+      question: "Can you automate WhatsApp, Gmail, or social media?",
+      answer: "Yes. We support automation for platforms like Gmail, WhatsApp, Instagram, Google Sheets, Telegram, Slack, and more."
     },
     {
-      question: "Do you offer a free trial?",
-      answer: "We offer a 14-day free trial for our Basic and Pro plans so you can experience the value before committing."
+      question: "Is my data safe with your platform?",
+      answer: "Absolutely. We use encryption and follow best practices to ensure your data is secure and confidential at all times."
     },
     {
-      question: "What kind of support is included?",
-      answer: "All plans include email support. Pro plans add phone support during business hours, while Enterprise plans include 24/7 priority support."
+      question: "Do you build custom workflows?",
+      answer: "Yes. We can create custom automation workflows specifically tailored to your business processes and goals."
     },
     {
-      question: "Can the plans be customized?",
-      answer: "Enterprise plans are fully customizable to your specific needs. For Basic and Pro plans, you can add specific services as needed."
+      question: "How long does it take to get started?",
+      answer: "Most clients are onboarded within 24–48 hours after the initial consultation and requirement gathering."
     }
   ];
+  
 
   return (
     <>
@@ -75,36 +54,15 @@ const Pricing = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold mb-6">Simple, Transparent Pricing</h1>
             <p className="text-xl text-gray-600">
-              Choose the plan that works best for your business needs
+              Contact us now to know the best pricing for your business needs
             </p>
           </div>
         </div>
       </div>
       
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <PricingCard
-              title="Basic"
-              price="$999"
-              period="month"
-              description="Perfect for small businesses starting with AI"
-              features={basicFeatures}
-              ctaText="Get Started"
-              ctaLink="/contact?plan=basic"
-            />
-            
-            <PricingCard
-              title="Professional"
-              price="$2,499"
-              period="month"
-              description="For growing businesses ready to leverage AI at scale"
-              features={proFeatures}
-              popular={true}
-              ctaText="Get Started"
-              ctaLink="/contact?plan=professional"
-            />
-            
+      <section className="">
+        <div className="container px-4">
+          <div className="grid">
             <PricingCard
               title="Enterprise"
               price="Custom"
@@ -112,7 +70,7 @@ const Pricing = () => {
               description="Tailored solutions for large organizations with complex needs"
               features={enterpriseFeatures}
               ctaText="Contact Us"
-              ctaLink="/contact?plan=enterprise"
+              ctaLink="/contact"
             />
           </div>
         </div>

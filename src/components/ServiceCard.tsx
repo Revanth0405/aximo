@@ -15,11 +15,11 @@ const ServiceCard = ({ title, description, icon, link }: ServiceCardProps) => {
       <div className="mb-4 text-primary">{icon}</div>
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
-      <Link to={link}>
+      {/* <Link to={link}>
         <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
           Learn More
         </Button>
-      </Link>
+      </Link> */}
     </div>
   );
 };

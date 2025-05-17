@@ -33,7 +33,7 @@ const Hero = ({ title, subtitle, ctaText, ctaLink }: HeroProps) => {
               <div className="aspect-square bg-white rounded-2xl shadow-xl overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-3/4 h-3/4 bg-gray-100 rounded-lg flex items-center justify-center">
-                    <div className="text-6xl text-primary">AI</div>
+                    <img src="/images/hero-img.png" alt="Hero Image" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>

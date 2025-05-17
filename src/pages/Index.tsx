@@ -17,8 +17,8 @@ const Index = () => {
       link: "/services/ai-consulting"
     },
     {
-      title: "Data Analytics",
-      description: "Transform your raw data into actionable insights with our advanced analytics.",
+      title: "AI Agents",
+      description: "AI agents to automate your business processes to improve efficiency.",
       icon: <ChartBar className="w-10 h-10" />,
       link: "/services/data-analytics"
     },
@@ -27,12 +27,6 @@ const Index = () => {
       description: "Custom AI chatbots to enhance customer service and streamline operations.",
       icon: <Bot className="w-10 h-10" />,
       link: "/services/chatbots"
-    },
-    {
-      title: "ML Solutions",
-      description: "Custom machine learning models designed to solve your specific business challenges.",
-      icon: <FileText className="w-10 h-10" />,
-      link: "/services/machine-learning"
     }
   ];
 
@@ -41,24 +35,22 @@ const Index = () => {
       <Navbar />
       
       <Hero 
-        title="Transforming Businesses Through AI Innovation"
-        subtitle="We help businesses harness the power of artificial intelligence to drive growth, improve efficiency, and create competitive advantages."
+        title="Automate Smarter, Grow Faster"
+        subtitle="We help businesses, content creators and marketers harness the power of AI to drive growth, improve efficiency, and create competitive advantages."
         ctaText="Explore Our Services"
         ctaLink="/services"
       />
-
-      <Stats />
       
       <section className="section-padding bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl font-bold mb-4">Our Services</h2>
             <p className="text-gray-600">
-              We offer a comprehensive range of AI solutions designed to help your business thrive in the digital age.
+              We offer a comprehensive range of AI solutions designed to help your things thrive in the digital age.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}
@@ -137,7 +129,7 @@ const Index = () => {
             <div className="lg:order-first">
               <div className="rounded-2xl overflow-hidden shadow-lg bg-secondary aspect-square relative">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-4xl font-bold text-gray-800">AI Technology</div>
+                  <img src="/images/ai2.png" alt="AI Agency" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>

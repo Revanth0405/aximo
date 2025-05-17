@@ -14,8 +14,9 @@ const Navbar = () => {
     <header className="w-full py-4 px-4 md:px-8 bg-white/90 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center">
+          <img src="/images/logo.PNG" alt="Logo" className="w-10 h-10 mr-2" />
           <h1 className="text-xl md:text-2xl font-semibold">
-            <span className="text-primary">AI</span>Agency
+            <span className="text-primary">AX</span>IMO
           </h1>
         </Link>
 

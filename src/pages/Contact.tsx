@@ -157,23 +157,21 @@ const Contact = () => {
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="service">Interested Service/Plan</Label>
+                    <Label htmlFor="service">Interested Service</Label>
                     <Select 
                       value={formData.service} 
                       onValueChange={handleServiceChange}
                     >
                       <SelectTrigger>
-                        <SelectValue placeholder="Select a service or plan" />
+                        <SelectValue placeholder="Select a service" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="basic">Basic Plan</SelectItem>
-                        <SelectItem value="professional">Professional Plan</SelectItem>
-                        <SelectItem value="enterprise">Enterprise Plan</SelectItem>
                         <SelectItem value="ai-consulting">AI Consulting</SelectItem>
-                        <SelectItem value="data-analytics">Data Analytics</SelectItem>
+                        <SelectItem value="data-analytics">AI Agents</SelectItem>
                         <SelectItem value="chatbots">AI Chatbots</SelectItem>
-                        <SelectItem value="machine-learning">Machine Learning</SelectItem>
-                        <SelectItem value="other">Other</SelectItem>
+                        <SelectItem value="machine-learning">Content Creation</SelectItem>
+                        <SelectItem value="other">AI Integration</SelectItem>
+                        <SelectItem value="enterprise">Marketing Automation</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -208,28 +206,18 @@ const Contact = () => {
                 
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Our Address</h3>
-                    <p className="text-gray-600">
-                      123 Tech Lane, Suite 100<br />
-                      San Francisco, CA 94103<br />
-                      United States
-                    </p>
-                  </div>
-                  
-                  <div>
                     <h3 className="text-lg font-semibold mb-2">Email Us</h3>
                     <p className="text-gray-600">
-                      General Inquiries: info@aiagency.com<br />
-                      Support: support@aiagency.com<br />
-                      Careers: careers@aiagency.com
+                      Founder: revanthbalabhadruni@gmail.com
+                      Co-Founder: adithyakumarnikhil@gmail.com
                     </p>
                   </div>
                   
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Call Us</h3>
                     <p className="text-gray-600">
-                      Main Office: (555) 123-4567<br />
-                      Support Line: (555) 987-6543
+                      +91 9347296933<br/>
+                      +91 9581341643
                     </p>
                   </div>
                   
@@ -243,15 +231,7 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="bg-primary rounded-lg shadow-md p-8 text-white">
-                <h3 className="text-xl font-semibold mb-4">Ready for a Demo?</h3>
-                <p className="mb-6">
-                  Schedule a free personalized demo to see how our AI solutions can benefit your business.
-                </p>
-                <Button variant="outline" className="bg-white text-primary hover:bg-gray-100">
-                  Book a Demo
-                </Button>
-              </div>
+              
             </div>
           </div>
         </div>

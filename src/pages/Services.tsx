@@ -1,7 +1,7 @@
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Brain, ChartBar, Bot, FileText, Settings, Tag, DollarSign, Users, Briefcase } from "lucide-react";
+import { Brain, ChartBar, Bot, FileText, Settings, Tag, DollarSign, Users, Briefcase, Plus, BadgeDollarSign, BriefcaseBusiness } from "lucide-react";
 import ServiceCard from "@/components/ServiceCard";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -10,51 +10,39 @@ const Services = () => {
   const services = [
     {
       title: "AI Consulting",
-      description: "Strategic guidance on implementing AI solutions tailored to your business needs.",
+      description: "Strategic guidance on implementing AI agents and solutions tailored to your business needs.",
       icon: <Brain className="w-10 h-10" />,
-      link: "/services/ai-consulting"
+      //link: "/services/ai-consulting"
     },
     {
-      title: "Data Analytics",
-      description: "Transform your raw data into actionable insights with our advanced analytics.",
-      icon: <ChartBar className="w-10 h-10" />,
-      link: "/services/data-analytics"
+      title: "AI Agents",
+      description: "AI agents to automate your business processes to improve efficiency.",
+      icon: <BriefcaseBusiness className="w-10 h-10" />,
+      //link: "/services/data-analytics"
     },
     {
       title: "AI Chatbots",
       description: "Custom AI chatbots to enhance customer service and streamline operations.",
       icon: <Bot className="w-10 h-10" />,
-      link: "/services/chatbots"
+      //link: "/services/chatbots"
     },
     {
-      title: "ML Solutions",
-      description: "Custom machine learning models designed to solve your specific business challenges.",
-      icon: <FileText className="w-10 h-10" />,
-      link: "/services/machine-learning"
+      title: "Content Creation",
+      description: "Content creation for your business to improve your SEO and social media presence for youtube and instagram.",
+      icon: <Plus className="w-10 h-10"/>,
+      //link: "/services/machine-learning"
     },
     {
       title: "AI Integration",
-      description: "Seamlessly integrate AI solutions with your existing systems and workflows.",
+      description: "Seamlessly integrate AI solutions with your existing systems and workflows and websites.",
       icon: <Settings className="w-10 h-10" />,
-      link: "/services/ai-integration"
+      //link: "/services/ai-integration"
     },
     {
-      title: "Predictive Analytics",
-      description: "Forecast trends and behaviors to make data-driven decisions for your business.",
-      icon: <ChartBar className="w-10 h-10" />,
-      link: "/services/predictive-analytics"
-    },
-    {
-      title: "NLP Solutions",
-      description: "Natural Language Processing solutions for text analysis and understanding.",
-      icon: <FileText className="w-10 h-10" />,
-      link: "/services/nlp-solutions"
-    },
-    {
-      title: "Computer Vision",
-      description: "Image and video recognition systems for various industry applications.",
-      icon: <Tag className="w-10 h-10" />,
-      link: "/services/computer-vision"
+      title: "Marketing Automation",
+      description: "Create automated marketing campaigns to improve your sales and customer engagement with AI Advertisements.",
+      icon: <BadgeDollarSign className="w-10 h-10" />,
+      //link: "/services/predictive-analytics"
     }
   ];
 
@@ -67,7 +55,7 @@ const Services = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl font-bold mb-6">Our Services</h1>
             <p className="text-xl text-gray-600">
-              Comprehensive AI solutions designed to help your business thrive in the digital age.
+              Comprehensive AI solutions designed to help your things thrive in the digital age.
             </p>
           </div>
         </div>
@@ -75,14 +63,14 @@ const Services = () => {
       
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <ServiceCard
                 key={index}
                 title={service.title}
                 description={service.description}
                 icon={service.icon}
-                link={service.link}
+                //link={service.link}
               />
             ))}
           </div>
